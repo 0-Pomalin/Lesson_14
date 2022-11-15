@@ -5,7 +5,7 @@ body {
 
 .wrapper {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   padding-top: 65px;
   min-height: 100%;
 }
@@ -15,9 +15,14 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: rgb(126, 126, 126);
 }
 
 /* Header */
+
+.page-header__container {
+  background-color: transparent;
+}
 
 .page-header {
   border-bottom: 1px solid #ececec;
@@ -29,20 +34,26 @@ body {
   z-index: 100;
 }
 
+.page-header__nav {
+  position: relative;
+  min-height: 60px;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
   color: #2196f3;
+  transition: all 0.3s ease 0s;
 }
 
 .logo__web--black {
   color: #000;
 }
 
-.page-header__nav {
-  min-height: 60px;
+.logo:hover {
+  font-size: 30px;
 }
 
 .menu {
@@ -70,10 +81,28 @@ body {
   color: #000;
   display: inline-block;
   padding: 5px 0px;
+  transition: all 0.3s ease 0s;
+  position: relative;
 }
 
 .menu__link:hover {
   color: #2196f3;
+}
+
+.menu__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+  transition: width 0.3s ease 0s;
+}
+
+.menu__link:hover::after {
+  width: 100%;
 }
 
 .sub-menu {
@@ -85,6 +114,7 @@ body {
   left: 0;
   opacity: 0;
   visibility: hidden;
+  border: 2px solid #000;
   transition: all 0.5s ease 0s;
 }
 
@@ -98,10 +128,26 @@ body {
 
 .sub-menu__link {
   font-size: 16px;
+  position: relative;
 }
 
 .sub-menu__link:hover {
   color: #2196f3;
+}
+
+.sub-menu__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #2196f3;
+  transition: width 0.3s ease 0s;
+}
+
+.sub-menu__link:hover::after {
+  width: 100%;
 }
 
 .title {
@@ -111,15 +157,49 @@ body {
   text-align: center;
 }
 
-.examples__main-title {
+.main-title {
   font-weight: 900;
   font-size: 38px;
   color: tomato;
+  animation: title 3s ease;
 }
 
 /* section examples*/
 
 .examples {
+}
+
+.examples__title,
+.examples-animation__title,
+.newton-cradle__title {
+  opacity: 0;
+  animation: title 3s ease 0.5s forwards;
+}
+
+@keyframes title {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.examples__sub-title,
+.examples-animation__sub-title {
+  transform: translate(0, 50%);
+  opacity: 0;
+  animation: sub-title 1s ease 2s forwards;
+}
+
+@keyframes sub-title {
+  0% {
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
 }
 
 /* footer */
