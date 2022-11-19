@@ -6,15 +6,18 @@ body {
 .wrapper {
   position: relative;
   overflow: hidden;
-  padding-top: 65px;
+  padding-top: 60px;
   min-height: 100%;
 }
 
 [class*='__container'] {
   max-width: 1230px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+
+  padding: 35px;
+  /* padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 35px; */
   background-color: rgb(126, 126, 126);
 }
 
@@ -22,6 +25,7 @@ body {
 
 .page-header__container {
   background-color: transparent;
+  padding: 0;
 }
 
 .page-header {
@@ -158,22 +162,11 @@ body {
 }
 
 .main-title {
+  margin-bottom: 15px;
   font-weight: 900;
   font-size: 38px;
   color: tomato;
   animation: title 3s ease;
-}
-
-/* section examples*/
-
-.examples {
-}
-
-.examples__title,
-.examples-animation__title,
-.newton-cradle__title {
-  opacity: 0;
-  animation: title 3s ease 0.5s forwards;
 }
 
 @keyframes title {
@@ -186,20 +179,72 @@ body {
   }
 }
 
-.examples__sub-title,
-.examples-animation__sub-title {
-  transform: translate(0, 50%);
-  opacity: 0;
-  animation: sub-title 1s ease 2s forwards;
+/* section */
+
+.section {
+  /* padding-top: 60px; */
+  padding-bottom: 60px;
 }
 
-@keyframes sub-title {
-  0% {
-  }
-  100% {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
+.section__title {
+  margin-bottom: 25px;
+  opacity: 0;
+  animation: title 3s ease 0.5s forwards;
+}
+
+/* container-properties */
+
+.container-properties {
+  /* text-align: center; */
+}
+
+.container-properties__title {
+  margin-bottom: 15px;
+}
+
+.container-properties__title:not(:first-child) {
+  margin-top: 50px;
+}
+
+/*=========== display: flex | inline-flex ============*/
+
+.display {
+  border: 5px solid tomato;
+  background-color: #794f45;
+
+  display: flex;
+  /* display: inline-flex; */
+}
+
+.display__item {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #7a956b;
+  padding: 10px;
+  text-align: center;
+  border: 5px solid #77608d;
+}
+
+/*======= flex-wrap: nowrap | wrap | wrap-reverse =======*/
+
+.flex-wrap {
+  border: 5px solid tomato;
+  background-color: #794f45;
+  display: flex;
+
+  /* flex-wrap: wrap; */
+  flex-wrap: wrap-reverse;
+}
+
+.flex-wrap__item {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #7a956b;
+  padding: 10px;
+  text-align: center;
+  border: 5px solid #77608d;
 }
 
 /* footer */

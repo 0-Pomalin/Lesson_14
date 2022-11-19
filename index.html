@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson_14</title>
-    link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -19,15 +19,16 @@
         <div class="page-header__container">
           <nav class="page-header__nav">
             <a class="logo" href="./index.html" lang="en">Ol P<span class="logo__web logo__web--black">Web</span></a>
+
             <ul class="page-header__menu menu">
               <li class="menu__item">
-                <a class="menu__link" href="">Приклади позиціонування</a>
+                <a class="menu__link" href="">Властивості контейнера</a>
                 <ul class="sub-menu">
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#static">: static</a>
+                    <a class="sub-menu__link" href="#display">display: flex | inline-flex</a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#relative">: relative</a>
+                    <a class="sub-menu__link" href="#flex-wrap">flex-wrap: nowrap | wrap | wrap-reverse</a>
                   </li>
                   <li class="sub-menu__item">
                     <a class="sub-menu__link" href="#absolute">: absolute</a>
@@ -41,7 +42,7 @@
                 </ul>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#battlefield">Поле бою</a>
+                <a class="menu__link" href="#battlefield">Властивості елементу</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="">Контакти</a>
@@ -51,10 +52,27 @@
         </div>
       </header>
       <main>
-        <h1 class="main-title title">CSS властивість transition & animation</h1>
-        <section class="examples"></section>
-        <h2 class="examples__title title">CSS властивість transform</h2>
-        <h3 class="examples__sub-title title">transition: [property] [duration] [timing-function] [delay]</h3>
+        <h1 class="main-title title">Модуль FLEXBOX</h1>
+        <section class="section container-properties">
+          <h2 class="section__title title">Властивості контейнера</h2>
+          <div class="container-properties__container">
+            <h2 id="display" class="container-properties__title title">display: flex | inline-flex</h2>
+            <div id="" class="container-properties__display display">
+              <div class="display__item">1</div>
+              <span class="display__item">2</span>
+              <div class="display__item">3</div>
+              <span class="display__item">4</span>
+            </div>
+
+            <h2 id="flex-wrap" class="container-properties__title title">flex-wrap: nowrap | wrap | wrap-reverse</h2>
+            <div id="" class="container-properties__flex-wrap flex-wrap">
+              <div class="flex-wrap__item">1</div>
+              <span class="flex-wrap__item">2</span>
+              <div class="flex-wrap__item">3</div>
+              <span class="flex-wrap__item">4</span>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="page-footer"></footer>
     </div>
