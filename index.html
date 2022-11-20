@@ -25,19 +25,22 @@
                 <a class="menu__link" href="">Властивості контейнера</a>
                 <ul class="sub-menu">
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#display">display: flex | inline-flex</a>
+                    <a class="sub-menu__link" href="#display">display: ...</a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#flex-wrap">flex-wrap: nowrap | wrap | wrap-reverse</a>
+                    <a class="sub-menu__link" href="#flex-wrap">flex-wrap: ...</a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#absolute">: absolute</a>
+                    <a class="sub-menu__link" href="#justify-content">justify-content: ...</a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#fixed">: fixed</a>
+                    <a class="sub-menu__link" href="#align-items">align-items: ...</a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#sticky">: sticky</a>
+                    <a class="sub-menu__link" href="#align-content">align-content: ...</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__link" href="#flex-direction">flex-direction: ...</a>
                   </li>
                 </ul>
               </li>
@@ -57,7 +60,7 @@
           <h2 class="section__title title">Властивості контейнера</h2>
           <div class="container-properties__container">
             <h2 id="display" class="container-properties__title title">display: flex | inline-flex</h2>
-            <div id="" class="container-properties__display display">
+            <div class="container-properties__display display">
               <div class="display__item">1</div>
               <span class="display__item">2</span>
               <div class="display__item">3</div>
@@ -65,11 +68,95 @@
             </div>
 
             <h2 id="flex-wrap" class="container-properties__title title">flex-wrap: nowrap | wrap | wrap-reverse</h2>
-            <div id="" class="container-properties__flex-wrap flex-wrap">
+            <div class="container-properties__flex-wrap flex-wrap">
               <div class="flex-wrap__item">1</div>
               <span class="flex-wrap__item">2</span>
               <div class="flex-wrap__item">3</div>
               <span class="flex-wrap__item">4</span>
+            </div>
+
+            <h2 id="justify-content" class="container-properties__title title">
+              justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+            </h2>
+            <div class="container-properties__justify-content justify-content">
+              <div class="justify-content__item">1</div>
+              <span class="justify-content__item">2</span>
+              <div class="justify-content__item">3</div>
+              <span class="justify-content__item">4</span>
+            </div>
+
+            <h2 id="align-items" class="container-properties__title title">
+              align-items: stretch | flex-start | flex-end | center | baseline
+            </h2>
+            <div class="container-properties__align-items align-items">
+              <div class="align-items__item">1</div>
+              <span class="align-items__item">22</span>
+              <div class="align-items__item">333</div>
+              <span class="align-items__item">4444</span>
+              <div class="align-items__item">1</div>
+              <span class="align-items__item">22</span>
+              <div class="align-items__item">333</div>
+              <span class="align-items__item">4444</span>
+              <div class="align-items__item">1</div>
+              <span class="align-items__item">22</span>
+              <div class="align-items__item">333</div>
+              <span class="align-items__item">4444</span>
+              <div class="align-items__item">1</div>
+              <span class="align-items__item">22</span>
+              <div class="align-items__item">333</div>
+              <span class="align-items__item">4444</span>
+              <div class="align-items__item">1</div>
+              <span class="align-items__item">22</span>
+              <div class="align-items__item">333</div>
+              <span class="align-items__item">4444</span>
+              <div class="align-items__item">1</div>
+              <span class="align-items__item">22</span>
+              <div class="align-items__item">333</div>
+              <span class="align-items__item">4444</span>
+            </div>
+
+            <h2 id="align-content" class="container-properties__title title">
+              align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch
+            </h2>
+            <div class="container-properties__align-content align-content">
+              <div class="align-content__item">1</div>
+              <span class="align-content__item">22</span>
+              <div class="align-content__item">333</div>
+              <span class="align-content__item">4444</span>
+              <div class="align-content__item">1</div>
+              <span class="align-content__item">22</span>
+              <div class="align-content__item">333</div>
+              <span class="align-content__item">4444</span>
+              <div class="align-content__item">1</div>
+              <span class="align-content__item">22</span>
+              <div class="align-content__item">333</div>
+              <span class="align-content__item">4444</span>
+              <div class="align-content__item">1</div>
+              <span class="align-content__item">22</span>
+              <div class="align-content__item">333</div>
+              <span class="align-content__item">4444</span>
+              <div class="align-content__item">1</div>
+              <span class="align-content__item">22</span>
+              <div class="align-content__item">333</div>
+              <span class="align-content__item">4444</span>
+              <div class="align-content__item">1</div>
+              <span class="align-content__item">22</span>
+              <div class="align-content__item">333</div>
+              <span class="align-content__item">4444</span>
+              <div class="align-content__item">1</div>
+              <span class="align-content__item">22</span>
+              <div class="align-content__item">333</div>
+              <span class="align-content__item">4444</span>
+            </div>
+
+            <h2 id="flex-direction" class="container-properties__title title">
+              flex-direction: row | row-reverse | column | column-reverse;
+            </h2>
+            <div class="container-properties__flex-direction flex-direction">
+              <div class="flex-direction__item">1</div>
+              <span class="flex-direction__item">2</span>
+              <div class="flex-direction__item">3</div>
+              <span class="flex-direction__item">4</span>
             </div>
           </div>
         </section>
